@@ -1,0 +1,92 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage[lang=PT,box,completemulti]{automultiplechoice}
+
+% "lang=PT" fui eu que coloquei. O "portuguese babel" acho que nem funciona.
+
+\usepackage{multicol}
+ 
+\begin{document}
+
+\onecopy{2}{    
+
+%%% beginning of the test sheet header:    
+
+\noindent{\bf QCM  \hfill TESTE}
+
+\vspace*{.5cm}
+\begin{minipage}{.4\linewidth}
+\centering\large\bf Teste\\ Exame feito em 27/10/2020\end{minipage}
+\namefield{\fbox{    
+                \begin{minipage}{.5\linewidth}
+                  Nome:
+
+                  \vspace*{.5cm}\dotfill
+                  \vspace*{1mm}
+                \end{minipage}
+         }}
+
+\begin{center}\em
+Duração: 10 minutes.
+
+No documento allowed. The use of electronic calculators is forbidden.
+
+Questões using the sign \multiSymbole{} may have zero, one or several correct answers.
+Other questions have a single correct answer.
+Negative points may be attributed to \emph{very bad} answers.
+\end{center}
+\vspace{1ex}
+
+%%% end of the header
+
+\begin{question}{Questao-3.1-Halliday-4ed} % Ambiente para apenas uma questão correta. A segunda Chave é um marcador.
+  A respeito da Among the following persons, which one has ever been a President of the French Republic?
+  \begin{choices}
+    \correctchoice{René Coty}
+    \wrongchoice{Alain Prost}
+    \wrongchoice{Marcel Proust}
+    \wrongchoice{Claude Monet}
+  \end{choices}
+\end{question}
+
+
+\begin{questionmult}{pref} % Ambiente para mais de uma questão correta. A segunda Chave é um marcador.
+  Among the following cities, which ones are French prefectures?
+  \begin{choices}
+    \correctchoice{Poitiers}
+    \wrongchoice{Sainte-Menehould}
+    \correctchoice{Avignon}
+  \end{choices}
+\end{questionmult}
+
+
+
+
+\begin{question}{Questao-pagina-100-Gaspar} % Ambiente para apenas uma questão correta. A segunda Chave é um marcador.
+% Questão obtida o livro Gaspar, página 100
+(Enem) uma empresa de transporte precisa efetuar a entrega de uma encomenda o mais breve possível. Para tanto, 
+a equipe de logística analisa o trajeto desde a empresa até o local da entrega. Ela verifica que o trajeto apresenta
+dois trechos de distâncias diferentes e velocidades máximas permitidas diferentes. No primeiro trecho, a velocidade
+ máxima permitida é de 80 km/h e a distância a ser percorrida é de 80 km. No segundo trecho, cujo comprimento 
+vale 60 km, a velocidade máxima permitida é 120 km/h. Supondo que as condições de trânsito sejam favoráveis
+para que o veículo da empresa ande continuamente na velocidade máxima permitida, qual será o tempo necessário, 
+em horas, para a realização da entrega?
+\begin{choices}
+\wrongchoice{0,7}
+\wrongchoice{1,4}
+\correctchoice{1,5}
+\wrongchoice{2,0}
+\wrongchoice{3,0}
+\end{choices}
+\end{question}
+
+
+
+% \AMCaddpagesto{3} 
+
+}   
+
+\end{document}
